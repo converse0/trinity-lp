@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -168,8 +169,89 @@
           </div>
         </div>
       </section>
+      <section class="popular">
+        <div class="conatiner">
+          <div class="popular__inner">
+            <div class="popular__descr">
+              <img class="popular__img" src="images/popular-img.jpg" alt="" />
+              <div class="popular__img-descr">
+                <p class="popular__descr-text">Rent Lamborghini Huracan STO</p>
+                <p class="popular__price">
+                  <span>Rent is from aed</span>
+                  2 400$
+                  <span>per day</span>
+                </p>
+              </div>
+            </div>
+            <div class="popular__info">
+              <h3 class="popular__title">Most Popular</h3>
+              <div class="popular__search">
+                <input class="search-input" type="text" placeholder="Car search" />
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.7089 25.9452C20.9145 25.9452 25.9452 20.9145 25.9452 14.7089C25.9452 8.5033 20.9145 3.47266 14.7089 3.47266C8.5033 3.47266 3.47266 8.5033 3.47266 14.7089C3.47266 20.9145 8.5033 25.9452 14.7089 25.9452Z"
+                    stroke="#434343"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22.5225 23.1064L26.9275 27.5002"
+                    stroke="#434343"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="popular__slider swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <h5 class="slider__item-title">Lamborghini</h5>
+                    <p class="slider__item-text">Huracan EVO Spyder</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h5 class="slider__item-title">Lamborghini</h5>
+                    <p class="slider__item-text">Urus</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h5 class="slider__item-title">Audi</h5>
+                    <p class="slider__item-text">RS6</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h5 class="slider__item-title">Ferrari</h5>
+                    <p class="slider__item-text">Roma</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h5 class="slider__item-title">Range Rover</h5>
+                    <p class="slider__item-text">Autobiography New 2022</p>
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="slider__buttons swiper-button-up">
+                  <img src="images/arrow-up.svg" alt="" />
+                </div>
+                <div class="slider__buttons swiper-button-down">
+                  <img src="images/arrow-down.svg" alt="" />
+                </div>
+              </div>
+              <button class="popular__button">View All</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/main.js"></script>
 </html>
